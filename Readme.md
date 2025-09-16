@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Трубчик](https://up.htmlacademy.ru/htmlcss-individual/2/user/314909).
-* Наставник: `Ирина Антипина`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
