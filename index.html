@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta charset="utf-8" />
+    <title>Седона — Главная</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="page-header">
+      <div class="container">
+        <a href="./index.html" class="header-logo">
+          <img src="./img/logo.svg" alt="логотип шапки">
+        </a>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="./index.html" class="active">Главная</a></li>
+            <li><a href="#">О Седоне</a></li>
+            <li><a href="./catalog.html">Гостиницы</a></li>
+          </ul>
+          <ul class="header-controls">
+            <li class="search-btn" aria-label="Поиск">
+              <a class="search-btn" href="#">
+                <img src="img/icons/search.svg" width="20" height="20" alt="Поиск">
+                <span class="visually-hidden" >Поиск</span>
+              </a>
+            </li>
+            <li class="favorites-btn">
+              <a class="navigation-link" href="#"><img src="img/icons/heart.svg" width="20" height="20" alt="Избранное">
+              <span class="visually-hidden" >Избранное</span>
+              </a>
+            </li>
+            <li class="btn-primary">
+              <a href="#" class="btn-primary">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <main class="main-index">
+      <section class="hero">
+        <div class="hero-title">WELCOME</div>
+        <div class="hero-subtitle">to the gorgeous</div>
+        <h1 class="hero-main">SEDONA</h1>
+        <blockquote>
+          Because the Grand Canyon sucks!
+        </blockquote>
+      </section>
 
+      <section class="advantages container">
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+
+        <div class="grid">
+          <div class="advantage-item blue">
+            <h3>Настоящий городок</h3>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="img/photo-1.jpg" alt="Настоящий городок" />
+          </div>
+          <div class="advantage-item">
+            <h3>Небольшая площадь</h3><hr>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="advantage-item">
+            <h3>Красивая дорога</h3><hr>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="advantage-item">
+            <h3>Мало туристов</h3><hr>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+          <div class="advantage-item blue">
+            <h3>Там есть Мост Дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется.</p>
+            <img src="img/photo-2.jpg" alt="Мост Дьявола" />
+          </div>
+        </div>
+      </section>
+
+      <section class="comfort container">
+        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p>Опытный персонал и качественное обслуживание!</p>
+
+        <div class="grid grid--small">
+          <div class="service">
+            <img src="img/house.svg" alt="Жильё" />
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div class="service">
+            <img src="img/burger.svg" alt="Еда" />
+            <h3>Еда</h3>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="service">
+            <img src="img/souvenir.svg" alt="Сувениры" />
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interest container">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="btn-primary open-modal" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+    </main>
+    <section class="subscription container bg-image">
+      <h2>Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscription-form">
+        <input type="email" placeholder="Ваш e-mail" required />
+        <button type="submit" class="btn-primary">Подписаться</button>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="social-links">
+          <li class="social-item">
+            <a href="https://vk.com/htmlacademy" aria-label="Вконтакте" class="vk-icon">
+              <img src="img/icons/vk.svg" width="20" height="20" alt="Вконтакте">
+              <span class="visually-hidden" >Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://t.me/htmlacademy" aria-label="Telegram" class="telegram-icon">
+              <img src="img/icons/tg.svg" width="20" height="20" alt="Telegram">
+              <span class="visually-hidden" >Telegram</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/user/htmlacademyru" aria-label="YouTube" class="youtube-icon">
+              <img src="img/icons/youtube.svg" width="20" height="20" alt="YouTube">
+              <span class="visually-hidden" >YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="phone">+7 (812) 812-12-12</div>
+        <div class="logo">
+          <a href="https://htmlacademy.ru/" class="logo-academy" aria-label="HTML Academy">
+            <img src="./img/icons/logo_htmlacademy.svg" alt="логотип HtmlAcademy" width="115" height="33" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Модальное окно -->
+    <div class="modal" id="search-modal" aria-hidden="true">
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <h3 id="modal-title">Поиск гостиницы в Седоне</h3>
+        <button class="modal__close" aria-label="Закрыть">×</button>
+        <form class="search-form" novalidate>
+          <label for="checkin-date">Дата Заезда:</label>
+          <input id="checkin-date" name="checkin" type="date" required />
+          <span class="error">Мы не можем отправить вас в прошлое.</span>
+
+          <label for="checkout-date">Дата Выезда:</label>
+          <input id="checkout-date" name="checkout" type="date" required />
+          <span class="hint">На эти даты есть свободные номера. Пока есть.</span>
+
+          <div class="guest-controls">
+            <label>Взрослые:</label>
+            <button type="button" class="decrement" aria-label="Уменьшить количество взрослых">−</button>
+            <span class="count" id="adults-count">2</span>
+            <button type="button" class="increment" aria-label="Увеличить количество взрослых">+</button>
+
+            <label for="children-count">Дети:</label>
+            <button type="button" class="decrement" aria-label="Уменьшить количество детей">−</button>
+            <span class="count" id="children-count">2</span>
+            <button type="button" class="increment" aria-label="Увеличить количество детей">+</button>
+
+            <button type="button" class="info-btn" aria-describedby="tooltip" aria-label="Информация">i</button>
+            <div class="tooltip" role="tooltip" id="tooltip">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Найти гостиницу</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
