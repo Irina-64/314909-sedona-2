@@ -16,12 +16,19 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 1. В форке вашего проекта создайте, положите в папку styles/ и подключите к странице стилевой файл styles.css, чтобы у вас получилась примерно такая структура проекта:
 
 project
+
 | – styles
+
 | –    styles.css
+
 | – fonts
+
 | – images
+
 |      [ваши картинки]
+
 |   index.html
+
 |   catalog.html
 
 2. В форке вашего проекта начните стилизацию страницы, в которую входит:
