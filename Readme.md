@@ -19,13 +19,13 @@ project
 
 | – styles
 
-| –    styles.css
+| –---  styles.css
 
 | – fonts
 
 | – images
 
-|      [ваши картинки]
+| ---- [ваши картинки]
 
 |   index.html
 
