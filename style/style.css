@@ -513,17 +513,17 @@ img {
   margin: 54px auto 0;
 }
 
-.search-button:hover,
-.search-button:focus {
+.search-button-main:hover,
+.search-button-main:focus {
   background-color: #615048;
 }
 
-.search-button:active {
+.search-button-main:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
 
-.search-button:disabled {
+.search-button-main:disabled {
   color: #ffffff;
   background-color: #e5e5e5;
 }
