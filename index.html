@@ -31,12 +31,12 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link-user search-icon" href="#">
+              <a class="navigation-link-user search-icon" href="./search.html">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link-user favourite-icon" href="#">
+              <a class="navigation-link-user favourite-icon" href="./favourites.html">
                 <span class="visually-hidden">Лайки</span>
                 <span class="favourite-number">12</span>
               </a>
@@ -76,7 +76,7 @@
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-description color-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-items emphasis-background">
+          <li class="advantages-items  darkblue">
             <h3 class="advantages-title">Красивая<br> дорога</h3>
             <p class="advantages-description color-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
@@ -102,7 +102,7 @@
           <p class="greeting-about color-description">Опытный персонал и качественное обслуживание!</p>
         </div>
         <ul class="service-list">
-          <li class="service-item emphasis-background">
+          <li class="service-item darkblue">
             <h3 class="service-title">Жилье</h3>
             <p class="advantages-description color-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в
               кино!
@@ -126,7 +126,7 @@
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
           предложения гостиниц в Седоне</p>
-        <a class="search-button-main" href="catalog.html">Поиск гостиницы в седоне</a>
+        <a class="search-button-main" href="./modal.html" target="_blank">Поиск гостиницы в седоне</a>
       </section>
 
       <section class="subscribe" data-test="subscribe">
@@ -184,9 +184,9 @@
         <a class="footer-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="footer-logo">
-        <h2 class="visually-hidden">Ссылка логотоип HTML Academy</h2>
-        <a class="link-logo" href="https://htmlacademy.ru">
-          <span class="visually-hidden">Логотип ссылка ведущая на сайт академии.</span>
+        <h2 class="visually-hidden">лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»</h2>
+        <a class="link-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <span class="visually-hidden">лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»</span>
           <svg class="footer-picture" xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none"
             viewBox="0 0 115 34" role="img">
             <path
@@ -195,14 +195,15 @@
         </a>
       </section>
     </footer>
-
-    <div class="modal-container modal-container-close">
+    <!-- Модальное окно "Поиск гостиницы в Седоне" -->
+    <!-- Класс modal-container-close закрывает модальное окно -->
+    <div class="modal-container modal-container-close" data-test="modal-container">
       <div class="modal modal-auth">
-        <button class="modal-close-button" type="button">
+        <button class="modal-close-button">
           <span class="visually-hidden">Закрыть окно.</span>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Cедоне</h2>
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form class="date-table" action="https://echo.htmlacademy.ru/" method="get">
             <div class="date-wrapper">
               <label class="field-name" for="in-date">Дата Заезда: </label>

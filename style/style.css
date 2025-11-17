@@ -14,6 +14,13 @@
   font-display: swap;
 }
 
+/* сброс фона у select в Firefox */
+@-moz-document url-prefix() {
+  select {
+    background: none;
+  }
+}
+
 :root {
   --text-primary-color: #000000;
   --text-primary-rgba20-color:  rgba(0, 0, 0, 0.2);
@@ -104,6 +111,18 @@ img {
   object-fit: contain;
 }
 
+/* Убираем стрелки у input[type=number] в Chrome и Firefox */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -117,7 +136,7 @@ img {
 }
 
 .page-container {
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -127,7 +146,6 @@ img {
 }
 
 /* HEADER */
-
 .page-header {
   width: 1060px;
   margin: 0 auto;
@@ -611,7 +629,8 @@ img {
 .subscribe .greeting-about {
   margin-bottom: 54px;
 }
-/* FOOTER */
+
+/* footer */
 .page-footer {
   align-items: center;
   width: 100%;
@@ -644,6 +663,15 @@ img {
   padding: 10px;
   width: 48px;
   height: 40px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #68a2ca;
+}
+
+.social-link:active {
+  background-color: rgba(104, 162, 202, 0.3);
 }
 
 .social-item {
@@ -1111,7 +1139,7 @@ img {
 .catalog-reset:disabled {
   color: rgba(255, 255, 255, 0.1);
 }
-/* SEARCH RESULTS */
+/* inner-search result */
 .inner-search {
   width: 1060px;
   margin: 0 auto;
@@ -1482,7 +1510,7 @@ img {
   background: none;
   color: #000000;
 }
-/* MODAL */
+/* modal */
 .modal-container {
   position: fixed;
   top: 0;
@@ -1502,6 +1530,16 @@ img {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
+}
+
+.modal input[type="number"] {
+  font: inherit;
+}
+
+/*исправлен размер шрифта у подписей от/до в фильтрах */
+label.field-name {
+  font-size: 18px;
+  color: #000000;
 }
 
 .modal-auth {
@@ -1650,7 +1688,8 @@ img {
   color: #ff5757;
 }
 
-.people-number {
+/*размер шрифта у подписей от/до в фильтрах */
+input.people-number { 
   width: 31px;
   height: 48px;
   padding: 14px 5px;
