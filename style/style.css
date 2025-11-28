@@ -112,7 +112,7 @@ body {
   --shadow-middle-color: #e6e6e6;
 }
 
-* Убираем стрелки у input[type=number] в Chrome и Firefox */
+/* Убираем стрелки у input[type=number] в Chrome и Firefox */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
