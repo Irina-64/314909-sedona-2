@@ -1804,7 +1804,7 @@ input[type="number"] {
 }
 
 .open-modal-btn {
-  margin-top: 54px;
+  margin-top: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
