@@ -275,10 +275,12 @@ input[type="number"] {
   border-radius: 50%;
 }
 
+.link-current,
 .link-current-catalog {
   position: relative;
 }
 
+.link-current::before,
 .link-current-catalog::before {
   position: absolute;
   z-index: 1;
@@ -291,24 +293,8 @@ input[type="number"] {
   content: "";
 }
 
-.link-current {
-  position: relative;
-}
-
 .navigation-link ~.link-current:hover {
   color: inherit;
-}
-
-.link-current::before {
-  position: absolute;
-  z-index: 1;
-  bottom: -1px;
-  left: 0;
-  width: calc(100% - 12px - 12px);
-  height: 2px;
-  margin-left: 12px;
-  background-color: #756257;
-  content: "";
 }
 
 .navigation-user-item {
